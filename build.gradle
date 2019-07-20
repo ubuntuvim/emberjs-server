@@ -35,6 +35,13 @@ dependencies {
 	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.0.1'
 	implementation 'org.springframework.cloud:spring-cloud-starter'
 	compileOnly 'org.projectlombok:lombok'
+	// https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core
+	compile group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.9.9'
+	// https://mvnrepository.com/artifact/io.katharsis/katharsis-core
+	compile group: 'io.katharsis', name: 'katharsis-core', version: '3.0.2'
+	// https://mvnrepository.com/artifact/io.katharsis/katharsis-spring
+	compile group: 'io.katharsis', name: 'katharsis-spring', version: '3.0.2'
+	
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {

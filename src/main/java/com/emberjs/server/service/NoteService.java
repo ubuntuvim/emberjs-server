@@ -2,7 +2,7 @@ package com.emberjs.server.service;
 
 import java.util.List;
 
-import com.emberjs.server.domain.Note;
+import com.emberjs.server.domain.model.Note;
 
 public interface NoteService {
 	
@@ -11,6 +11,12 @@ public interface NoteService {
 	 * @param note
 	 */
 	Note save(Note note);
+	
+	/**
+	 * 更新一篇笔记
+	 * @param note
+	 */
+	Note update(Note note);
 	
 	/**
 	 * 根据id删除一篇笔记
