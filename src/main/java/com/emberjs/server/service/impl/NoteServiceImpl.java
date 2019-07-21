@@ -7,6 +7,7 @@ import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Collation;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
+import org.springframework.data.mongodb.core.query.Update;
 import org.springframework.stereotype.Service;
 
 import com.emberjs.server.domain.Note;
@@ -45,6 +46,11 @@ public class NoteServiceImpl implements NoteService {
 		// 一定要指定语言环境，否则报错。'Field 'locale' is invalid in: { locale: "note" }' 
 		query.collation(Collation.of("zh"));
 		return mongoTemplate.find(query, Note.class);
+	}
+
+	@Override
+	public Note update(String noteId, Note note) {
+		return mongoTemplate.save(note);
 	}
 
 }

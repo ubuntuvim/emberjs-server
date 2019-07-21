@@ -1,5 +1,8 @@
 package com.emberjs.server.domain;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import lombok.Getter;
@@ -19,4 +22,7 @@ public class Notebook extends BaseEntity {
 
 	String title;
 
+	List<String> notes = new ArrayList<>();
+	
+	
 }

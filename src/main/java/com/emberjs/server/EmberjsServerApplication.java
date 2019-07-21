@@ -9,7 +9,6 @@ import org.springframework.data.mongodb.config.EnableMongoAuditing;
  * 一定要禁用掉默认加载数据源类，否则项目无法启动
  * 报错：
  * Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
- * com.mongodb.MongoSocketOpenException: Exception opening socket
  * @author ubuntuvim
  *
  */

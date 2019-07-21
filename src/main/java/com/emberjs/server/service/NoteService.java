@@ -13,6 +13,12 @@ public interface NoteService {
 	Note save(Note note);
 	
 	/**
+	 * 更新一篇笔记
+	 * @param note
+	 */
+	Note update(String noteId, Note note);
+	
+	/**
 	 * 根据id删除一篇笔记
 	 * @param note
 	 */
